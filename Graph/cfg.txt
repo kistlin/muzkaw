@@ -1,0 +1,40 @@
+0-title: title
+ 
+1-x_label: x_label
+2-y_label: y_label
+ 
+3-x_zero: 0
+4-y_zero: 400
+ 
+5-x_range: 6
+6-y_range: 6
+ 
+7-x_size: 400
+8-y_size: 400
+ 
+9-x_ticks_spacing: 1
+10-y_ticks_spacing: 1
+ 
+11-tick_size: 5
+ 
+12-grid_detail: 2
+ 
+13-point_size: 5
+ 
+14-sample_number: 30
+ 
+ 
+point1_x: 0
+point1_y: 0
+point2_x: 3
+point2_y: 5
+point3_x: 6
+point3_y: 0
+
+ 
+tangent1_x: 1
+tangent1_y: 0
+tangent2_x: 1
+tangent2_y: 0
+tangent3_x: 1
+tangent3_y: 0

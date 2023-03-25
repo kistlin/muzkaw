@@ -1,0 +1,26 @@
+0-title: title
+ 
+1-x_label: x_label
+2-y_label: y_label
+ 
+3-x_zero: 200
+4-y_zero: 200
+ 
+5-x_range: 1
+6-y_range: 1
+ 
+7-x_size: 400
+8-y_size: 400
+ 
+9-x_ticks_spacing: 0.1
+10-y_ticks_spacing: 0.1
+ 
+11-tick_size: 5
+ 
+12-grid_detail: 2
+ 
+13-point_size: 5
+ 
+14-sample_number: 100
+ 
+ 
