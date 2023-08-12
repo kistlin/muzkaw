@@ -1,5 +1,7 @@
 #include "Point.h"
 
+#include <cmath>
+
 Point::Point() {
 	m_mass = 50;
 	m_position = sf::Vector2f(50, 50);

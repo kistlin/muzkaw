@@ -35,7 +35,7 @@ int main() {
 			particle.push_back(
 			    Particle(slider[0].getSliderValue(),
 			             sf::Vector2f(450, 450) + randVector2f(sf::Vector2f(-300, -300), sf::Vector2f(300, 300)),
-			             sf::Color::Color(255, i / (float)nb * 255, 0)));
+			             sf::Color(255, i / (float)nb * 255, 0)));
 
 		float force = slider[1].getSliderValue();
 		float drag = slider[2].getSliderValue();

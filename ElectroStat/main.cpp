@@ -9,7 +9,8 @@
 #include "Point.h"
 #include "Slider.h"
 #include "Utility.h"
-#include <SFML\Graphics.hpp>
+#include <SFML/Graphics/Color.hpp>
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -46,7 +47,7 @@ int main() {
 
 	sf::RectangleShape menuBackground;
 	menuBackground.setSize(sf::Vector2f(MENU_WIDTH, SCR_HEIGHT));
-	menuBackground.setFillColor(sf::Color::Color(210, 210, 210));  // menu
+	menuBackground.setFillColor(sf::Color(210, 210, 210));  // menu
 	menuBackground.setOutlineColor(sf::Color::Black);
 	menuBackground.setOutlineThickness(5);
 	sf::Font arial;
@@ -136,7 +137,7 @@ int main() {
 					float V = Charge::getV(sf::Vector2f(x + MENU_WIDTH, y), charges) * 10;
 					for (int i(0); i < quality; i++) {
 						for (int j(0); j < quality; j++) {
-							image.setPixel(x + i, y + j, sf::Color::Color(0, clamp(255 / 4 * (V + 2), 0, 225), 0));
+							image.setPixel(x + i, y + j, sf::Color(0, clamp(255 / 4 * (V + 2), 0, 225), 0));
 						}
 					}
 				}

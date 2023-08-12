@@ -64,7 +64,7 @@ void Slider::update() {
 
 		setSliderValue(value);
 
-		text.setColor(sf::Color::Color(100, 200, 20));
+		text.setColor(sf::Color(100, 200, 20));
 	}
 
 	else if (edit2) {
@@ -79,7 +79,7 @@ void Slider::update() {
 		}
 
 		text.setString(initialText + str);
-		text.setColor(sf::Color::Color(200, 20, 100));
+		text.setColor(sf::Color(200, 20, 100));
 	}
 	else
 		text.setColor(sf::Color::White);

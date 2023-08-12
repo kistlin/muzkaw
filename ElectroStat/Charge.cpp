@@ -1,4 +1,6 @@
 #include "Charge.h"
+
+#include <cmath>
 #include <iostream>
 
 Charge::Charge(float charge, float mass, sf::Vector2f const& position) {

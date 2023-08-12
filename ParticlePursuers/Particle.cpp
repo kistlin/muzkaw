@@ -1,5 +1,7 @@
 #include "Particle.h"
 
+#include <cmath>
+
 Particle::Particle() {
 	m_mass = 50;
 	m_position = sf::Vector2f(50, 50);
@@ -104,7 +106,7 @@ void Particle::updatePosition(float const& dt) {
 	VA.clear();
 	for (int i(0); i < tracer.size(); i++)
 		VA.append(sf::Vertex(sf::Vector2f(tracer[i].x, tracer[i].y),
-		                     sf::Color::Color(color.r, color.g, color.b, tracer[i].z * 2.5)));
+		                     sf::Color(color.r, color.g, color.b, tracer[i].z * 2.5)));
 }
 
 void Particle::draw(sf::RenderWindow& window) {

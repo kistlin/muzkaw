@@ -39,7 +39,7 @@ void FFT::hammingWindow() {
 			sample[i - mark] = Complex(buffer.getSamples()[i] * window[i - mark], 0);
 			VA1[i - mark] = sf::Vertex(sf::Vector2f(20, 250) + sf::Vector2f((i - mark) / (float)bufferSize * 700,
 			                                                                sample[i - mark].real() * 0.005),
-			                           sf::Color::Color(255, 0, 0, 50));
+			                           sf::Color(255, 0, 0, 50));
 		}
 	}
 }
@@ -84,9 +84,9 @@ void FFT::bars(float const& max) {
 		                      sf::Color::White));
 		VA2.append(sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, 0), sf::Color::White));
 		VA2.append(
-		    sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, 0), sf::Color::Color(255, 255, 255, 100)));
+		    sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, 0), sf::Color(255, 255, 255, 100)));
 		VA2.append(sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, samplePosition.y / max * 500 / 2.f),
-		                      sf::Color::Color(255, 255, 255, 0)));
+		                      sf::Color(255, 255, 255, 0)));
 	}
 }
 void FFT::lines(float const& max) {
@@ -106,7 +106,7 @@ void FFT::lines(float const& max) {
 	for (float i(3); i < bufferSize / 2.f; i *= 1.02) {
 		samplePosition = sf::Vector2f(log(i) / log(std::min(bufferSize / 2.f, 20000.f)), abs(bin[(int)i]));
 		cascade.push_back(sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, -samplePosition.y / max * 500),
-		                             sf::Color::Color(255, 255, 255, 20)));
+		                             sf::Color(255, 255, 255, 20)));
 	}
 	cascade.push_back(sf::Vertex(position + sf::Vector2f(samplePosition.x * 800, -samplePosition.y / max * 500),
 	                             sf::Color::Transparent));
