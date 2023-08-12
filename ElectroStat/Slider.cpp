@@ -54,12 +54,14 @@ bool Slider::isSliderClicked(sf::Mouse::Button button, sf::Vector2f mousePos) {
 	}
 	else
 		return false;
+	return true;
 }
 
 int Slider::getSliderValue() {
-	return ((m_slider.getPosition().x - m_position.x) / (m_body.getSize().x - m_slider.getSize().x) - 0.5) *
-	           (m_max - m_min) +
-	       (m_max + m_min) / 2;
+	double sliderPosition = m_slider.getPosition().x - m_position.x;
+	double bodySlider = m_body.getSize().x - m_slider.getSize().x;
+	double sliderValue = (sliderPosition / bodySlider - 0.5) * (m_max - m_min) + (m_max + m_min) / 2;
+	return sliderValue;
 }
 void Slider::setText(sf::Font& font, std::string text, int size) {
 	m_text.setFont(font);
